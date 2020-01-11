@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10c73e4b-beca-460b-bd75-54ef7ab7c214" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UuTReSeMIMq337cyGsB8dKlUb4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/org/litespring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Prepare2019/datastruct" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24942529" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.litespring.core.annotation" />
+      <recent name="org.litespring.beans.factory.annotation" />
+      <recent name="org.litespring.util" />
+      <recent name="org.litespring.beans.factory.config" />
+      <recent name="org.litespring.context.annotation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SJL\Projects\github\SCU\Organization-repo\MySpring\src\main\resources" />
+      <recent name="C:\SJL\Projects\github\SCU\Organization-repo\MySpring\src\main\java\org\litespring\core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplicationContextTest4.testGetBeanProperty">
+    <configuration name="ApplicationContextTest4.testGetBeanProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.version4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test.version4" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version4.ApplicationContextTest4" />
+      <option name="METHOD_NAME" value="testGetBeanProperty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutowireAnnotationProcessorTest.testGetInjectionMetadata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.version4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test.version4" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version4.AutowireAnnotationProcessorTest" />
+      <option name="METHOD_NAME" value="testGetInjectionMetadata" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DependencyDescriptorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.version4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test.version4" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version4.DependencyDescriptorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectionMetadataTest.testInjection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.version4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test.version4" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version4.InjectionMetadataTest" />
+      <option name="METHOD_NAME" value="testInjection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.litespring.test in MySpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApplicationContextTest4.testGetBeanProperty" />
+        <item itemvalue="JUnit.org.litespring.test in MySpring" />
+        <item itemvalue="JUnit.AutowireAnnotationProcessorTest.testGetInjectionMetadata" />
+        <item itemvalue="JUnit.InjectionMetadataTest.testInjection" />
+        <item itemvalue="JUnit.DependencyDescriptorTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10c73e4b-beca-460b-bd75-54ef7ab7c214" name="Default Changelist" comment="" />
+      <created>1575973567964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575973567964</updated>
+      <workItem from="1575973571513" duration="9004000" />
+      <workItem from="1575984243739" duration="2224000" />
+      <workItem from="1576043538999" duration="1057000" />
+      <workItem from="1576051789113" duration="17409000" />
+      <workItem from="1576133129210" duration="861000" />
+      <workItem from="1576134239092" duration="19066000" />
+      <workItem from="1576155570238" duration="308000" />
+      <workItem from="1576205268205" duration="129000" />
+      <workItem from="1576205479879" duration="546000" />
+      <workItem from="1576206040695" duration="18114000" />
+      <workItem from="1576235245509" duration="613000" />
+      <workItem from="1576423066039" duration="2359000" />
+      <workItem from="1576475841926" duration="666000" />
+      <workItem from="1576670774095" duration="20427000" />
+      <workItem from="1576748226363" duration="608000" />
+      <workItem from="1576784010886" duration="6675000" />
+      <workItem from="1576921721941" duration="652000" />
+      <workItem from="1577105911995" duration="3033000" />
+      <workItem from="1577168788922" duration="6530000" />
+      <workItem from="1577266064497" duration="2416000" />
+      <workItem from="1577540086876" duration="97000" />
+      <workItem from="1577612969907" duration="1908000" />
+      <workItem from="1577767638398" duration="617000" />
+      <workItem from="1578044161158" duration="143000" />
+      <workItem from="1578044360498" duration="83000" />
+      <workItem from="1578223958104" duration="307000" />
+      <workItem from="1578224487514" duration="317000" />
+      <workItem from="1578484542936" duration="2208000" />
+      <workItem from="1578549720000" duration="15759000" />
+      <workItem from="1578641248087" duration="1069000" />
+      <workItem from="1578642354185" duration="236000" />
+      <workItem from="1578642607959" duration="69000" />
+      <workItem from="1578642692099" duration="17972000" />
+      <workItem from="1578731594903" duration="1847000" />
+    </task>
+    <task id="LOCAL-00001" summary="little change">
+      <created>1576046618078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576046618078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.增加了Resource接口及其子类来管理配置文件&#10;2.完成了单例模式下Bean的创建和测试&#10;3.中幅度重构代码，将ClassLoader的配置优化——可以从两种Resource的实现类中设置ClassLoader&#10;4.重构代码，将Resource作为XmlReader的默认实现，但仍保留通过路径设置的load方法">
+      <created>1576084935863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576084935863</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加少许注解">
+      <created>1576085090432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576085090432</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.新增&lt;property&gt;标签的解析——bean或者string&#10;2.更改少许注解&#10;3.待办任务——将字符串转化为Number类型（Integer）">
+      <created>1576154809335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576154809335</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增对&lt;property&gt;标签中属性的转换功能，&#10;即将value值由String类型转换为Integer或Boolean&#10;优化了依赖注入">
+      <created>1576226056451</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576226056451</updated>
+    </task>
+    <task id="LOCAL-00006" summary="增加了一个基于BeanUtil的类型转换注入方法&#10;添加了部分注解">
+      <created>1576424802063</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576424802063</updated>
+    </task>
+    <task id="LOCAL-00007" summary="重新格式化代码，规范代码风格">
+      <created>1576675169906</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576675169906</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加构造器注入的配置支持，但仅支持&lt;constructor-arg ref=&quot;&quot;&gt;语法">
+      <created>1576742712316</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576742712316</updated>
+    </task>
+    <task id="LOCAL-00009" summary="完成注解的读取，尚未完成Bean的装配">
+      <created>1577174488872</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577174488872</updated>
+    </task>
+    <task id="LOCAL-00010" summary="完成注解的读取并生成BeanDefinition且注入到Factory中，&#10;下一步根据BeanDefinition生成Bean的实例以完成注解">
+      <created>1578577714871</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578577714871</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完全完成auto-scan，即包扫描+注解方式注册Bean，至此已经完成了Spring中的IOC部分">
+      <created>1578733358647</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578733358647</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="1" />
+        <option value="2" />
+        <option value="3" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="little change" />
+    <MESSAGE value="1.增加了Resource接口及其子类来管理配置文件&#10;2.完成了单例模式下Bean的创建和测试&#10;3.中幅度重构代码，将ClassLoader的配置优化——可以从两种Resource的实现类中设置ClassLoader&#10;4.重构代码，将Resource作为XmlReader的默认实现，但仍保留通过路径设置的load方法" />
+    <MESSAGE value="添加少许注解" />
+    <MESSAGE value="1.新增&lt;property&gt;标签的解析——bean或者string&#10;2.更改少许注解&#10;3.待办任务——将字符串转化为Number类型（Integer）" />
+    <MESSAGE value="新增对&lt;property&gt;标签中属性的转换功能，&#10;即将value值由String类型转换为Integer或Boolean&#10;优化了依赖注入" />
+    <MESSAGE value="增加了一个基于BeanUtil的类型转换注入方法&#10;添加了部分注解" />
+    <MESSAGE value="重新格式化代码，规范代码风格" />
+    <MESSAGE value="添加构造器注入的配置支持，但仅支持&lt;constructor-arg ref=&quot;&quot;&gt;语法" />
+    <MESSAGE value="完成注解的读取，尚未完成Bean的装配" />
+    <MESSAGE value="完成注解的读取并生成BeanDefinition且注入到Factory中，&#10;下一步根据BeanDefinition生成Bean的实例以完成注解" />
+    <MESSAGE value="完全完成auto-scan，即包扫描+注解方式注册Bean，至此已经完成了Spring中的IOC部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="完全完成auto-scan，即包扫描+注解方式注册Bean，至此已经完成了Spring中的IOC部分" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2190" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1576209720899">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2190" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576209720899" />
+    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1576222402935">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576222402935" />
+    <state x="2265" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1578662306534">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2265" y="134" key="#com.intellij.ide.util.MemberChooser/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577173507606" />
+    <state x="2265" y="134" key="#com.intellij.ide.util.MemberChooser/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578662306534" />
+    <state x="2287" y="278" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576786328628">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2287" y="278" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576786328628" />
+    <state x="2236" y="-205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578044290722">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state x="2236" y="-205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.-522.1080.1880/-1920.698.1280.680@1920.-522.1080.1880" timestamp="1578044290722" />
+    <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576206016970" />
+    <state x="1979" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576216341559">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="1979" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576216341559" />
+    <state x="2019" y="-6" key="CommitChangelistDialog2" timestamp="1578733356867">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state x="2019" y="-6" key="CommitChangelistDialog2/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733356867" />
+    <state x="141" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576424801044" />
+    <state x="2019" y="-9" key="CommitChangelistDialog2/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174487598" />
+    <state x="2019" y="-9" key="CommitChangelistDialog2/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578577711415" />
+    <state x="2211" y="282" key="DetectedRootsChooserDialog" timestamp="1576786308098">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2211" y="282" key="DetectedRootsChooserDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576786308098" />
+    <state x="2012" y="-430" width="896" height="1696" key="DiffContextDialog" timestamp="1578645892307">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2012" y="-430" width="896" height="1696" key="DiffContextDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578645892307" />
+    <state x="2240" y="173" key="FileChooserDialogImpl" timestamp="1578554903945">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="455" y="306" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1576475857294" />
+    <state x="2240" y="177" key="FileChooserDialogImpl/0.0.1536.824/-1920.470.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1577612973789" />
+    <state x="2240" y="173" key="FileChooserDialogImpl/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577767653030" />
+    <state x="2240" y="173" key="FileChooserDialogImpl/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578554903945" />
+    <state width="1037" height="684" key="GridCell.Tab.0.bottom" timestamp="1578733069226">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733069226" />
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
+    <state width="1037" height="684" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
+    <state width="1037" height="521" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
+    <state width="1037" height="684" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578664728992" />
+    <state width="1037" height="684" key="GridCell.Tab.0.center" timestamp="1578733069226">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.0.center/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733069226" />
+    <state width="1493" height="666" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
+    <state width="1037" height="684" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
+    <state width="1037" height="521" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
+    <state width="1037" height="684" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578664728992" />
+    <state width="1037" height="684" key="GridCell.Tab.0.left" timestamp="1578733069225">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.0.left/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733069225" />
+    <state width="1493" height="666" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970569" />
+    <state width="1037" height="684" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
+    <state width="1037" height="521" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
+    <state width="1037" height="684" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578664728992" />
+    <state width="1037" height="684" key="GridCell.Tab.0.right" timestamp="1578733069226">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.0.right/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733069226" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
+    <state width="1037" height="684" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
+    <state width="1037" height="521" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
+    <state width="1037" height="684" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578664728992" />
+    <state x="1937" y="142" key="SettingsEditor" timestamp="1577107153869">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576424239640" />
+    <state x="249" y="0" key="SettingsEditor/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576206166447" />
+    <state x="1937" y="142" key="SettingsEditor/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577107153869" />
+    <state x="2052" y="155" key="Vcs.Push.Dialog.v2" timestamp="1578733367491">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state x="2052" y="155" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578733367491" />
+    <state x="188" y="291" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576424808101" />
+    <state x="2052" y="151" key="Vcs.Push.Dialog.v2/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174497133" />
+    <state x="2052" y="151" key="Vcs.Push.Dialog.v2/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578577718773" />
+    <state x="2236" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1578731639258">
+      <screen x="1920" y="-522" width="1080" height="1880" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1576475841308" />
+    <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.470.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1577612969330" />
+    <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578731639258" />
+    <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-522.1080.1880/-1920.698.1280.680@1920.-522.1080.1880" timestamp="1578044361192" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576206040678" />
+    <state x="2236" y="14" key="com.intellij.ide.util.TipDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577767644013" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578641252240" />
+    <state x="2236" y="14" key="com.intellij.ide.util.TipDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578642692073" />
+    <state x="1920" y="28" key="new project wizard" timestamp="1576786518662">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="1920" y="28" key="new project wizard/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576786518662" />
+    <state x="2116" y="189" key="run.anything.popup" timestamp="1577174360523">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2116" y="189" key="run.anything.popup/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174360523" />
+    <state x="2123" y="-87" width="672" height="678" key="search.everywhere.popup" timestamp="1578650844864">
+      <screen x="1920" y="-522" width="1080" height="1870" />
+    </state>
+    <state x="2123" y="-87" width="672" height="678" key="search.everywhere.popup/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577173518884" />
+    <state x="2123" y="-87" width="672" height="678" key="search.everywhere.popup/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578650844864" />
+  </component>
+</project>

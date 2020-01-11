@@ -31,8 +31,7 @@ public class AutowireAnnotationProcessor implements InstantiationAwareBeanPostPr
 
     private boolean requiredParameterValue = true;
 
-    private final Set<Class<? extends Annotation>> autowiredAnnotationTypes =
-            new LinkedHashSet<>();
+    private final Set<Class<? extends Annotation>> autowiredAnnotationTypes = new LinkedHashSet<>();
 
     public AutowireAnnotationProcessor() {
         this.autowiredAnnotationTypes.add(Autowired.class);
@@ -136,6 +135,13 @@ public class AutowireAnnotationProcessor implements InstantiationAwareBeanPostPr
         return true;
     }
 
+    /**
+     * Inject dependencies here.
+     * @param bean dependency
+     * @param beanName bean name
+     * @throws BeansException inject failed
+     * @see #buildAutowiringMetadata(Class)
+     */
     @Override
     public void postProcessPropertyValues(Object bean, String beanName) throws BeansException {
         InjectionMetadata metadata = buildAutowiringMetadata(bean.getClass());

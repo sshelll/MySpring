@@ -3,6 +3,7 @@ package org.litespring.beans.factory.support;
 import org.apache.commons.beanutils.BeanUtils;
 import org.litespring.beans.PropertyValue;
 import org.litespring.beans.factory.BeanDefinitionRegistry;
+import org.litespring.beans.factory.NoSuchBeanDefinitionException;
 import org.litespring.beans.factory.config.BeanPostProcessor;
 import org.litespring.beans.factory.config.ConfigurableBeanFactory;
 import org.litespring.beans.factory.config.DependencyDescriptor;
@@ -264,5 +265,14 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("cannot load class: " + bd.getBeanClassName());
         }
+    }
+
+    @Override
+    public Class<?> getType(String name) throws NoSuchBeanDefinitionException {
+        BeanDefinition bd = this.getBeanDefinition(name);
+        if (bd == null)
+            throw new NoSuchBeanDefinitionException(name);
+        resolveBeanClass(bd);
+        return bd.getBeanClass();
     }
 }

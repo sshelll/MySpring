@@ -1,6 +1,6 @@
 package org.litespring.tx;
 
-import org.litespring.util.MessageChecker;
+import org.litespring.util.MessageTracker;
 
 /**
  * Description:
@@ -10,17 +10,17 @@ import org.litespring.util.MessageChecker;
  */
 public class TransactionManager {
     public void start() {
-        System.out.println("start rx");
-        MessageChecker.addMsg("start rx");
+        System.out.println("start tx");
+        MessageTracker.addMsg("start tx");
     }
 
     public void commit() {
         System.out.println("commit tx");
-        MessageChecker.addMsg("commit rx");
+        MessageTracker.addMsg("commit tx");
     }
 
     public void rollback() {
         System.out.println("rollback tx");
-        MessageChecker.addMsg("rollback rx");
+        MessageTracker.addMsg("rollback tx");
     }
 }

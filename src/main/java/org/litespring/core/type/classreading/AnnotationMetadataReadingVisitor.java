@@ -1,11 +1,11 @@
 package org.litespring.core.type.classreading;
 
-import asm.AnnotationVisitor;
-import asm.ClassVisitor;
-import asm.Type;
 import org.litespring.core.annotation.AnnotationAttributes;
 import org.litespring.core.type.AnnotationMetadata;
 import org.litespring.core.type.ClassMetadataReadingVisitor;
+import org.springframework.asm.AnnotationVisitor;
+import org.springframework.asm.ClassVisitor;
+import org.springframework.asm.Type;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -24,7 +24,7 @@ import java.util.Set;
  *
  * @author ShaoJiale
  * date 2019/12/20
- * @see asm.ClassReader#accept(ClassVisitor, int)
+ * @see org.springframework.asm.ClassReader#accept(ClassVisitor, int)
  * @see org.litespring.core.type.ClassMetadataReadingVisitor
  * @see org.litespring.core.type.AnnotationMetadata
  */

@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.litespring.context.ApplicationContext;
 import org.litespring.context.support.ClassPathXmlApplicationContext;
 import org.litespring.service.version5.PetStoreService;
-import org.litespring.util.MessageChecker;
+import org.litespring.util.MessageTracker;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class ApplicationContextV5 {
 
     @Before
     public void setUp() {
-        MessageChecker.clearMsg();
+        MessageTracker.clearMsg();
     }
 
     @Test
@@ -35,7 +35,7 @@ public class ApplicationContextV5 {
 
         petStore.placeOrder();
 
-        List<String> msg = MessageChecker.getMsg();
+        List<String> msg = MessageTracker.getMsg();
         Assert.assertEquals(3, msg.size());
         Assert.assertEquals("start tx", msg.get(0));
         Assert.assertEquals("place order", msg.get(1));

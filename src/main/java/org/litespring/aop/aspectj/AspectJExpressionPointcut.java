@@ -93,7 +93,7 @@ public class AspectJExpressionPointcut implements Pointcut, MethodMatcher {
     }
 
     /**
-     * Check if it's ready to march and build pointcut expression.
+     * Check if it's ready to match and build pointcut expression.
      *
      * @see #matches(Method)
      */

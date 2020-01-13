@@ -9,7 +9,7 @@ import java.util.List;
  * @author ShaoJiale
  * date 2020/1/11
  */
-public class MessageChecker {
+public class MessageTracker {
     private static List<String> TRACKER_MESSAGES = new ArrayList<>();
 
     public static void addMsg(String msg) {

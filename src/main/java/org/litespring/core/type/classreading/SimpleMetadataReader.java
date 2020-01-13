@@ -1,13 +1,13 @@
 package org.litespring.core.type.classreading;
 
-import asm.ClassReader;
-import org.litespring.core.io.Resource;
-import org.litespring.core.type.AnnotationMetadata;
-import org.litespring.core.type.ClassMetadata;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import org.litespring.core.io.Resource;
+import org.litespring.core.type.AnnotationMetadata;
+import org.litespring.core.type.ClassMetadata;
+import org.springframework.asm.ClassReader;
 
 /**
  * Description: A implement class for MetadataReader

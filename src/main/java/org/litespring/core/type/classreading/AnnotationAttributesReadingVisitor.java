@@ -1,8 +1,8 @@
 package org.litespring.core.type.classreading;
 
-import asm.AnnotationVisitor;
-import asm.SpringAsmInfo;
 import org.litespring.core.annotation.AnnotationAttributes;
+import org.springframework.asm.AnnotationVisitor;
+import org.springframework.asm.SpringAsmInfo;
 
 import java.util.Map;
 

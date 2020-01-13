@@ -1,12 +1,12 @@
 package org.litespring.test.version4;
 
-import asm.ClassReader;
 import org.junit.Assert;
 import org.junit.Test;
 import org.litespring.core.annotation.AnnotationAttributes;
 import org.litespring.core.io.ClassPathResource;
 import org.litespring.core.type.ClassMetadataReadingVisitor;
 import org.litespring.core.type.classreading.AnnotationMetadataReadingVisitor;
+import org.springframework.asm.ClassReader;
 
 /**
  * Description:

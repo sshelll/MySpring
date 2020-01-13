@@ -3,7 +3,7 @@ package org.litespring.service.version5;
 import org.litespring.beans.factory.annotation.Autowired;
 import org.litespring.dao.version5.AccountDao;
 import org.litespring.dao.version5.ItemDao;
-import org.litespring.util.MessageChecker;
+import org.litespring.util.MessageTracker;
 
 /**
  * Description:
@@ -31,6 +31,11 @@ public class PetStoreService {
 
     public void placeOrder() {
         System.out.println("place order");
-        MessageChecker.addMsg("place order");
+        MessageTracker.addMsg("place order");
+    }
+
+    public void placeOrderWithException() {
+        System.out.println("Throwing exception!");
+        throw new NullPointerException();
     }
 }

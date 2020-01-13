@@ -1,10 +1,9 @@
 package org.litespring.core.type;
 
-
-import asm.ClassVisitor;
-import asm.Opcodes;
-import asm.SpringAsmInfo;
 import org.litespring.util.ClassUtils;
+import org.springframework.asm.ClassVisitor;
+import org.springframework.asm.Opcodes;
+import org.springframework.asm.SpringAsmInfo;
 
 /**
  * Description: get information of a class from asm.

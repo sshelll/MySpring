@@ -5,6 +5,7 @@ import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.litespring.aop.config.ConfigBeanDefinitionParser;
 import org.litespring.beans.BeanDefinition;
 import org.litespring.beans.ConstructorArgument;
 import org.litespring.beans.PropertyValue;
@@ -55,6 +56,8 @@ public class XmlBeanDefinitionReader {
     public static final String BEANS_NAMESPACE_URI = "http://www.springframework.org/schema/beans";
 
     public static final String CONTEXT_NAMESPACE_URI = "http://www.springframework.org/schema/context";
+
+    public static final String AOP_NAMESPACE_URI = "http://www.springframework.org/schema/aop";
 
     public static final String BASE_PACKAGE_ATTRIBUTE = "base-package";
 
@@ -121,11 +124,14 @@ public class XmlBeanDefinitionReader {
 
                 String namespaceUri = elem.getNamespaceURI();
                 if (this.isDefaultNamespace(namespaceUri)) {
-                    // regular bean
+                    // regular bean <bean>
                     parseDefaultElement(elem);
                 } else if (this.isContextNamespace(namespaceUri)) {
                     // tag like <context:component-scan>
                     parseComponentElement(elem);
+                } else if (this.isAOPNameSpace(namespaceUri)) {
+                    // aop elements in <aop:config>
+                    parseAOPElement(elem);
                 }
             }
         } catch (Exception e) {
@@ -147,6 +153,10 @@ public class XmlBeanDefinitionReader {
 
     public boolean isContextNamespace(String namespaceUri) {
         return (!StringUtils.hasLength(namespaceUri) || CONTEXT_NAMESPACE_URI.equals(namespaceUri));
+    }
+
+    public boolean isAOPNameSpace(String namespaceUri) {
+        return (!StringUtils.hasLength(namespaceUri) || AOP_NAMESPACE_URI.equals(namespaceUri));
     }
 
     /**
@@ -175,12 +185,23 @@ public class XmlBeanDefinitionReader {
 
     /**
      * parse the package-scan attribute
+     *
      * @param elem current element
      */
     public void parseComponentElement(Element elem) {
         String basePackages = elem.attributeValue(BASE_PACKAGE_ATTRIBUTE);
         ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(registry);
         scanner.doScan(basePackages);
+    }
+
+    /**
+     * parse the aop element
+     *
+     * @param elem aop element
+     */
+    public void parseAOPElement(Element elem) {
+        ConfigBeanDefinitionParser parser = new ConfigBeanDefinitionParser();
+        parser.parse(elem, this.registry);
     }
 
     /**

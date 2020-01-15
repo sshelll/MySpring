@@ -1,133 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10c73e4b-beca-460b-bd75-54ef7ab7c214" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/Advice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/AopInvocationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AbstractAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterReturningAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterThrowingAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJBeforeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/AopConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/AopConfigException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/AopConfigSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/AopProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/CglibProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-core-asm-3.2.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-core-cglib-3.2.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/CGLibTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/CglibAopProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/ReflectiveMethodInvocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/asm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="10c73e4b-beca-460b-bd75-54ef7ab7c214" name="Default Changelist" comment="完成ConfigBeanDefinitionParser，用于解析XML配置的aop参数">
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/config/AspectInstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/config/ConfigBeanDefinitionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/BeanFactoryAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/FactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/support/BeanDefinitionReaderUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/AbstractV5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/BeanDefinitionTestV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCUNET-Connector/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCUNET-Connector/src/main/java/SCUNET/ChangeIP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCUNET-Connector/src/main/java/SCUNET/ConnectNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCUNET-Connector/src/main/java/SCUNET/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SCUNET-Connector/src/main/java/SCUNET/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJExpressionPointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJExpressionPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/ClassMetadataReadingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/ClassMetadataReadingVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/AnnotationAttributesReadingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/AnnotationAttributesReadingVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/AnnotationMetadataReadingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/AnnotationMetadataReadingVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/SimpleMetadataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/core/type/classreading/SimpleMetadataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/util/MessageChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/util/MessageTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/asm.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/service/version5/PetStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/service/version5/PetStoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/test/version4/ClassReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version4/ClassReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/ApplicationContextV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/ApplicationContextV5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/tx/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/tx/TransactionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asm.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/Advice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/Advice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AbstractAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AbstractAspectJAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterReturningAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterReturningAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterThrowingAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJAfterThrowingAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/aspectj/AspectJBeforeAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/aop/config/MethodLocatingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/aop/config/MethodLocatingFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/beans/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/beans/ConstructorArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/ConstructorArgument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/exception/BeanDefinitionStoreException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/exception/BeanDefinitionStoreException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/support/GenericBeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/support/GenericBeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/litespring/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/CglibAopProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/CglibAopProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/ReflectiveMethodInvocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/litespring/test/version5/ReflectiveMethodInvocationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/BeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/BeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/BeansException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/BeansException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/ConstructorArgument$ValueHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/ConstructorArgument$ValueHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/ConstructorArgument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/ConstructorArgument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/PropertyValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/PropertyValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/TypeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/TypeConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanDefinitionRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanDefinitionRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanNameGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/BeanNameGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AnnotatedBeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AnnotatedBeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AutowireAnnotationProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AutowireAnnotationProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/Autowired.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/Autowired.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AutowiredFieldElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/AutowiredFieldElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/InjectionElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/InjectionElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/InjectionMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/annotation/InjectionMetadata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/AutowireCapableBeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/AutowireCapableBeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/BeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/BeanPostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/ConfigurableBeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/ConfigurableBeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/DependencyDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/DependencyDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/InstantiationAwareBeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/InstantiationAwareBeanPostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/RuntimeBeanReference.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/RuntimeBeanReference.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/SingletonBeanRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/SingletonBeanRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/TypedStringValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/config/TypedStringValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/BeanCreationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/BeanCreationException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/BeanDefinitionStoreException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/BeanDefinitionStoreException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/TypeMismatchException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/exception/TypeMismatchException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/BeanDefinitionValueResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/BeanDefinitionValueResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/ConstructorResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/ConstructorResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/DefaultBeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/DefaultBeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/DefaultSingletonBeanRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/DefaultSingletonBeanRegistry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/GenericBeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/GenericBeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/SimpleTypeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/support/SimpleTypeConverter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/xml/XmlBeanDefinitionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/factory/xml/XmlBeanDefinitionReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/propertyEditors/CustomBooleanEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/propertyEditors/CustomBooleanEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/beans/propertyEditors/CustomNumberEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/beans/propertyEditors/CustomNumberEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/ApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/ApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/AnnotationBeanNameGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/AnnotationBeanNameGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/ClassPathBeanDefinitionScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/ClassPathBeanDefinitionScanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/ScannedGenericBeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/annotation/ScannedGenericBeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/support/AbstractApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/support/AbstractApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/support/ClassPathXmlApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/support/ClassPathXmlApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/context/support/FileSystemXmlApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/context/support/FileSystemXmlApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/annotation/AnnotationAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/annotation/AnnotationAttributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/annotation/AnnotationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/annotation/AnnotationUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/io/ClassPathResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/io/ClassPathResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/io/FileSystemResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/io/FileSystemResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/io/Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/io/Resource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/io/support/PackageResourceLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/io/support/PackageResourceLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/AnnotationMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/AnnotationMetadata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/ClassMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/ClassMetadata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/ClassMetadataReadingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/ClassMetadataReadingVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/AnnotationAttributesReadingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/AnnotationAttributesReadingVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/AnnotationMetadataReadingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/AnnotationMetadataReadingVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/MetadataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/MetadataReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/SimpleMetadataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/core/type/classreading/SimpleMetadataReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/stereotype/Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/stereotype/Component.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/util/Assert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/util/Assert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/util/ClassUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/util/ClassUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/util/NumberUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/util/NumberUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/util/ReflectionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/util/ReflectionUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/litespring/util/StringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/litespring/util/StringUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version2/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version2/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version2/ItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version2/ItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version3/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version3/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version3/ItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version3/ItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version4/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version4/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version4/ItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/dao/version4/ItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version1/PetStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version1/PetStoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version2/PetStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version2/PetStoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version3/PetStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version3/PetStoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version4/PetStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/service/version4/PetStoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/ApplicationContextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/ApplicationContextTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/BeanFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/BeanFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/ResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version1/ResourceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/ApplicationContextTestV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/ApplicationContextTestV2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/BeanDefinitionTestV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/BeanDefinitionTestV2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/BeanDefinitionValueResolverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/BeanDefinitionValueResolverTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/CustomBooleanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/CustomBooleanTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/CustomNumberEditorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/CustomNumberEditorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/TypeConverterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version2/TypeConverterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/ApplicationContextTestV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/ApplicationContextTestV3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/BeanDefinitionTestV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/BeanDefinitionTestV3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/ConstructorResolverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version3/ConstructorResolverTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ApplicationContextTest4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ApplicationContextTest4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/AutowireAnnotationProcessorTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/AutowireAnnotationProcessorTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/AutowireAnnotationProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/AutowireAnnotationProcessorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ClassPathBeanDefinitionScannerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ClassPathBeanDefinitionScannerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ClassReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/ClassReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/DependencyDescriptorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/DependencyDescriptorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/InjectionMetadataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/InjectionMetadataTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/MetadataReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/MetadataReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/PackageResourceLoaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/PackageResourceLoaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/XmlBeanDefinitionReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/litespring/test/version4/XmlBeanDefinitionReaderTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +94,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/org/litespring" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/spring-core-asm-3.2.18.RELEASE.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Prepare2019/JavaReview" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -196,42 +103,39 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SJL\Projects\github\MyGitHub\MySpring\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.litespring.aop.config" />
+      <recent name="org.litespring.beans.factory" />
+      <recent name="org.litespring.aop.framework" />
+      <recent name="org.litespring.aop.aspectj" />
+      <recent name="org.litespring.beans" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\SJL\Projects\github\SCU\Organization-repo\MySpring\src\main\resources" />
       <recent name="C:\SJL\Projects\github\SCU\Organization-repo\MySpring\src\main\java\org\litespring\core" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.litespring.aop.framework" />
-      <recent name="org.litespring.aop.aspectj" />
-      <recent name="org.litespring.beans" />
-      <recent name="org.litespring.beans.factory" />
-      <recent name="org.litespring.aop.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\SJL\Projects\github\MyGitHub\MySpring\src\main\resources" />
-    </key>
   </component>
   <component name="RunManager" selected="JUnit.org.litespring.test in MySpring">
-    <configuration name="ApplicationContextTest4.testGetBeanProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.Test" />
       <module name="MySpring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.litespring.test.version4.*" />
+          <option name="PATTERN" value="org.litespring.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.litespring.test.version4" />
-      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version4.ApplicationContextTest4" />
-      <option name="METHOD_NAME" value="testGetBeanProperty" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CGLibTest.testCallBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanDefinitionTestV5.testAOPBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySpring" />
       <extension name="coverage">
         <pattern>
@@ -240,24 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.litespring.test.version5" />
-      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version5.CGLibTest" />
-      <option name="METHOD_NAME" value="testCallBack" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CGLibTest.testFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MySpring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.litespring.test.version5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.litespring.test.version5" />
-      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version5.CGLibTest" />
-      <option name="METHOD_NAME" value="testFilter" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version5.BeanDefinitionTestV5" />
+      <option name="METHOD_NAME" value="testAOPBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -279,6 +167,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReflectiveMethodInvocationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.litespring.test.version5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.litespring.test.version5" />
+      <option name="MAIN_CLASS_NAME" value="org.litespring.test.version5.ReflectiveMethodInvocationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.litespring.test in MySpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySpring" />
       <extension name="coverage">
@@ -296,10 +199,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.org.litespring.test in MySpring" />
+        <item itemvalue="JUnit.BeanDefinitionTestV5.testAOPBean" />
+        <item itemvalue="JUnit.ReflectiveMethodInvocationTest" />
         <item itemvalue="JUnit.CglibAopProxyTest.testGetProxy" />
-        <item itemvalue="JUnit.CGLibTest.testFilter" />
-        <item itemvalue="JUnit.CGLibTest.testCallBack" />
-        <item itemvalue="JUnit.ApplicationContextTest4.testGetBeanProperty" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +267,10 @@
       <workItem from="1578731594903" duration="1847000" />
       <workItem from="1578734482908" duration="10391000" />
       <workItem from="1578796764147" duration="10907000" />
-      <workItem from="1578886400822" duration="13852000" />
+      <workItem from="1578886400822" duration="14239000" />
+      <workItem from="1578918101258" duration="1237000" />
+      <workItem from="1578999978324" duration="3819000" />
+      <workItem from="1579063861362" duration="8358000" />
     </task>
     <task id="LOCAL-00001" summary="little change">
       <created>1576046618078</created>
@@ -457,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578749437408</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="进一步推进AOP完成进度，目前已经实现了ProxyFactory和AopConfig">
+      <created>1578917558555</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578917558555</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,22 +399,25 @@
     <MESSAGE value="完成注解的读取并生成BeanDefinition且注入到Factory中，&#10;下一步根据BeanDefinition生成Bean的实例以完成注解" />
     <MESSAGE value="完全完成auto-scan，即包扫描+注解方式注册Bean，至此已经完成了Spring中的IOC部分" />
     <MESSAGE value="初步完成AOP，目前已可以从XML文件中扫描到切面方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步完成AOP，目前已可以从XML文件中扫描到切面方法" />
+    <MESSAGE value="进一步推进AOP完成进度，目前已经实现了ProxyFactory和AopConfig" />
+    <MESSAGE value="完成ConfigBeanDefinitionParser，用于解析XML配置的aop参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成ConfigBeanDefinitionParser，用于解析XML配置的aop参数" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2190" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1576209720899">
       <screen x="1920" y="-522" width="1080" height="1870" />
     </state>
     <state x="2190" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576209720899" />
-    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1578803848243">
-      <screen x="1920" y="-522" width="1080" height="1870" />
-    </state>
-    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576222402935" />
-    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578803848243" />
-    <state x="491" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1578899476983">
+    <state x="131" y="41" width="1275" height="748" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579072854196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="491" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578899476983" />
+    <state x="131" y="41" width="1275" height="748" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579072854196" />
+    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576222402935" />
+    <state x="2012" y="-430" width="896" height="1696" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578803848243" />
+    <state x="491" y="194" key="#com.intellij.ide.util.MemberChooser" timestamp="1579067540754">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="194" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579067540754" />
     <state x="2265" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578740974226" />
     <state x="2265" y="134" key="#com.intellij.ide.util.MemberChooser/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577173507606" />
     <state x="2265" y="134" key="#com.intellij.ide.util.MemberChooser/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578811437540" />
@@ -519,10 +435,14 @@
     </state>
     <state x="1979" y="348" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578747031781" />
     <state x="1979" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1576216341559" />
-    <state x="171" y="13" key="CommitChangelistDialog2" timestamp="1578917441601">
+    <state x="306" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579065080043">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="171" y="13" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917441601" />
+    <state x="306" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579065080043" />
+    <state x="150" y="7" key="CommitChangelistDialog2" timestamp="1579073139975">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="150" y="7" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579073139975" />
     <state x="2040" y="477" key="CommitChangelistDialog2/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749435472" />
     <state x="141" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576424801044" />
     <state x="2019" y="-9" key="CommitChangelistDialog2/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174487598" />
@@ -535,45 +455,49 @@
       <screen x="1920" y="-522" width="1080" height="1870" />
     </state>
     <state x="2012" y="-430" width="896" height="1696" key="DiffContextDialog/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578645892307" />
-    <state x="2240" y="173" key="FileChooserDialogImpl" timestamp="1578810772552">
-      <screen x="1920" y="-522" width="1080" height="1870" />
+    <state x="455" y="306" key="FileChooserDialogImpl" timestamp="1578918531489">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="455" y="306" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1576475857294" />
+    <state x="455" y="306" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578918531489" />
     <state x="2240" y="177" key="FileChooserDialogImpl/0.0.1536.824/-1920.470.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1577612973789" />
     <state x="2240" y="177" key="FileChooserDialogImpl/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578739742731" />
     <state x="2240" y="173" key="FileChooserDialogImpl/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577767653030" />
     <state x="2240" y="173" key="FileChooserDialogImpl/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578810772552" />
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1578917465207">
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1579073014577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917465207" />
+    <state width="1493" height="401" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579004565893" />
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579073014577" />
     <state width="1037" height="787" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749533916" />
     <state width="1493" height="666" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
     <state width="1037" height="684" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
     <state width="1037" height="521" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
     <state width="1037" height="573" key="GridCell.Tab.0.bottom/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578812321931" />
-    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1578917465206">
+    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1579073014577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917465206" />
+    <state width="1493" height="401" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579004565892" />
+    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579073014577" />
     <state width="1037" height="787" key="GridCell.Tab.0.center/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749533915" />
     <state width="1493" height="666" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
     <state width="1037" height="684" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
     <state width="1037" height="521" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
     <state width="1037" height="573" key="GridCell.Tab.0.center/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578812321931" />
-    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1578917465206">
+    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1579073014577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917465206" />
+    <state width="1493" height="401" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579004565892" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579073014577" />
     <state width="1037" height="787" key="GridCell.Tab.0.left/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749533915" />
     <state width="1493" height="666" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970569" />
     <state width="1037" height="684" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
     <state width="1037" height="521" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@0.0.1536.824" timestamp="1578577750974" />
     <state width="1037" height="573" key="GridCell.Tab.0.left/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578812321930" />
-    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1578917465207">
+    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1579073014577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917465207" />
+    <state width="1493" height="401" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579004565892" />
+    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579073014577" />
     <state width="1037" height="787" key="GridCell.Tab.0.right/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749533916" />
     <state width="1493" height="666" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576745970570" />
     <state width="1037" height="684" key="GridCell.Tab.0.right/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577175686250" />
@@ -587,17 +511,19 @@
     <state x="249" y="0" key="SettingsEditor/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@0.0.1536.824" timestamp="1576206166447" />
     <state x="1937" y="142" key="SettingsEditor/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577107153869" />
     <state x="1928" y="42" key="SettingsEditor/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578811171137" />
-    <state x="2052" y="155" key="Vcs.Push.Dialog.v2" timestamp="1578749442121">
-      <screen x="1920" y="-522" width="1080" height="1880" />
+    <state x="188" y="292" key="Vcs.Push.Dialog.v2" timestamp="1578917562250">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="188" y="292" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578917562250" />
     <state x="2052" y="155" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578749442121" />
     <state x="188" y="291" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576424808101" />
     <state x="2052" y="151" key="Vcs.Push.Dialog.v2/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174497133" />
     <state x="2052" y="151" key="Vcs.Push.Dialog.v2/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578577718773" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578886400229">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1546" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1579063860219">
+      <screen x="-1920" y="0" width="1280" height="680" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578886400229" />
+    <state x="-1546" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579063860219" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578999977980" />
     <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.470.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1577612969330" />
     <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.698.1280.680/1920.-522.1080.1880@1920.-522.1080.1880" timestamp="1578734482794" />
     <state x="2236" y="17" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.-522.1080.1880/-1920.698.1280.680@1920.-522.1080.1880" timestamp="1578044361192" />
@@ -618,10 +544,10 @@
       <screen x="1920" y="-522" width="1080" height="1870" />
     </state>
     <state x="2116" y="189" key="run.anything.popup/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577174360523" />
-    <state x="289" y="192" width="956" height="299" key="search.everywhere.popup" timestamp="1578887301616">
+    <state x="289" y="192" width="956" height="299" key="search.everywhere.popup" timestamp="1579069900972">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="289" y="192" width="956" height="299" key="search.everywhere.popup/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1578887301616" />
+    <state x="289" y="192" width="956" height="299" key="search.everywhere.popup/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1579069900972" />
     <state x="2123" y="-87" width="672" height="678" key="search.everywhere.popup/1920.-522.1080.1870/0.0.1536.824/-1920.470.1280.680@1920.-522.1080.1870" timestamp="1577173518884" />
     <state x="2123" y="-87" width="672" height="678" key="search.everywhere.popup/1920.-522.1080.1870/0.0.1536.824/-1920.698.1280.680@1920.-522.1080.1870" timestamp="1578802574243" />
   </component>

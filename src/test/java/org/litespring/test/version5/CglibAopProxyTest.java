@@ -6,12 +6,13 @@ import org.junit.Test;
 import org.litespring.aop.aspectj.AspectJAfterReturningAdvice;
 import org.litespring.aop.aspectj.AspectJBeforeAdvice;
 import org.litespring.aop.aspectj.AspectJExpressionPointcut;
+import org.litespring.aop.config.AspectInstanceFactory;
 import org.litespring.aop.framework.AopConfig;
 import org.litespring.aop.framework.AopConfigSupport;
 import org.litespring.aop.framework.AopProxyFactory;
 import org.litespring.aop.framework.CglibProxyFactory;
+import org.litespring.beans.factory.BeanFactory;
 import org.litespring.service.version5.PetStoreService;
-import org.litespring.tx.TransactionManager;
 import org.litespring.util.MessageTracker;
 
 import java.util.List;
@@ -22,31 +23,36 @@ import java.util.List;
  * @author ShaoJiale
  * date 2020/1/13
  */
-public class CglibAopProxyTest {
+public class CglibAopProxyTest extends AbstractV5Test {
 
-    private static AspectJBeforeAdvice beforeAdvice = null;
-    private static AspectJAfterReturningAdvice afterAdvice = null;
-    private static AspectJExpressionPointcut pc = null;
-    private static PetStoreService petStore = null;
-    private TransactionManager tx;
+    private AspectJBeforeAdvice beforeAdvice = null;
+    private AspectJAfterReturningAdvice afterAdvice = null;
+    private AspectJExpressionPointcut pc = null;
+    private BeanFactory beanFactory = null;
+    private AspectInstanceFactory aspectInstanceFactory = null;
 
     @Before
     public void setUp() throws Exception {
-        petStore = new PetStoreService();
-        tx = new TransactionManager();
+        MessageTracker.clearMsg();
+
         String expression = "execution(* org.litespring.service.version5.*.placeOrder(..))";
         pc = new AspectJExpressionPointcut();
         pc.setExpression(expression);
 
+        beanFactory = this.getBeanFactory("petstore-v5.xml");
+        aspectInstanceFactory = this.getAspectInstanceFactory("tx");
+        aspectInstanceFactory.setBeanFactory(beanFactory);
+
         beforeAdvice = new AspectJBeforeAdvice(
-                TransactionManager.class.getMethod("start"),
+                getAdviceMethod("start"),
                 pc,
-                tx);
+                aspectInstanceFactory
+        );
 
         afterAdvice = new AspectJAfterReturningAdvice(
-                TransactionManager.class.getMethod("commit"),
+                getAdviceMethod("commit"),
                 pc,
-                tx
+                aspectInstanceFactory
         );
     }
     @Test

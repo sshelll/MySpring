@@ -1,5 +1,6 @@
 package org.litespring.beans.factory.support;
 
+import org.litespring.aop.config.MethodLocatingFactory;
 import org.litespring.beans.BeanDefinition;
 import org.litespring.beans.ConstructorArgument;
 import org.litespring.beans.PropertyValue;
@@ -21,6 +22,7 @@ public class GenericBeanDefinition implements BeanDefinition {
     private boolean singleton = true;
     private boolean prototype = false;
     private String scope = SCOPE_DEFAULT;
+    private boolean isSynthetic = false;
 
     List<PropertyValue> propertyValues = new ArrayList<>();
     private ConstructorArgument constructorArgument = new ConstructorArgument();
@@ -32,6 +34,11 @@ public class GenericBeanDefinition implements BeanDefinition {
 
     public GenericBeanDefinition() {
 
+    }
+
+    public GenericBeanDefinition(Class<?> clazz) {
+        this.beanClass = clazz;
+        this.beanClassName = clazz.getName();
     }
 
     @Override
@@ -111,5 +118,14 @@ public class GenericBeanDefinition implements BeanDefinition {
     @Override
     public boolean hasConstructorArgumentValues() {
         return !this.constructorArgument.isEmpty();
+    }
+
+    public void setSynthetic(boolean synthetic) {
+        isSynthetic = synthetic;
+    }
+
+    @Override
+    public boolean isSynthetic() {
+        return this.isSynthetic;
     }
 }

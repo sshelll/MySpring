@@ -1,6 +1,7 @@
 package org.litespring.aop;
 
 import org.aopalliance.intercept.MethodInterceptor;
+import org.litespring.aop.aspectj.AspectJBeforeAdvice;
 
 /**
  * Description: Interface of interceptors in MySpring.
@@ -11,7 +12,7 @@ import org.aopalliance.intercept.MethodInterceptor;
  * @author ShaoJiale
  * date 2020/1/12
  * @see Pointcut
- * @see org.litespring.aop.aspectj.AspectJBeforeAdvice
+ * @see AspectJBeforeAdvice
  */
 public interface Advice extends MethodInterceptor {
     Pointcut getPointcut();

@@ -24,9 +24,9 @@ import java.util.List;
 public class ConstructorResolver {
     protected final Log logger = LogFactory.getLog(getClass());
 
-    private final ConfigurableBeanFactory beanFactory;
+    private final AbstractBeanFactory beanFactory;
 
-    public ConstructorResolver(ConfigurableBeanFactory beanFactory) {
+    public ConstructorResolver(AbstractBeanFactory beanFactory) {
         this.beanFactory = beanFactory;
     }
 
@@ -77,12 +77,12 @@ public class ConstructorResolver {
         }
 
         if (constructorToUse == null)
-            throw new BeanCreationException("cannot find a appropriate constructor", bd.getID());
+            throw new BeanCreationException(" cannot find a appropriate constructor", bd.getID());
 
         try {
             return constructorToUse.newInstance(argsToUse);
         } catch (Exception e) {
-            throw new BeanCreationException("cannot find a create instance using " + constructorToUse.getName(), bd.getID());
+            throw new BeanCreationException(" cannot find a create instance using " + constructorToUse.getName(), bd.getID());
         }
     }
 

@@ -1,8 +1,10 @@
 package org.litespring.beans.factory.support;
 
 import org.apache.commons.beanutils.BeanUtils;
+import org.litespring.beans.BeansException;
 import org.litespring.beans.PropertyValue;
 import org.litespring.beans.factory.BeanDefinitionRegistry;
+import org.litespring.beans.factory.BeanFactoryAware;
 import org.litespring.beans.factory.NoSuchBeanDefinitionException;
 import org.litespring.beans.factory.config.BeanPostProcessor;
 import org.litespring.beans.factory.config.ConfigurableBeanFactory;
@@ -29,8 +31,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * date 2019/12/10
  * @see DefaultSingletonBeanRegistry
  */
-public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
-        implements ConfigurableBeanFactory, BeanDefinitionRegistry {
+public class DefaultBeanFactory extends AbstractBeanFactory
+        implements BeanDefinitionRegistry {
 
     private List<BeanPostProcessor> beanPostProcessors = new ArrayList<>();
 
@@ -70,6 +72,26 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
         return this.beanDefinitionMap.get(beanID);
     }
 
+    @Override
+    public List<Object> getBeansByType(Class<?> type){
+        List<Object> result = new ArrayList<Object>();
+        List<String> beanIDs = this.getBeanIDsByType(type);
+        for(String beanID : beanIDs){
+            result.add(this.getBean(beanID));
+        }
+        return result;
+    }
+
+    private List<String> getBeanIDsByType(Class<?> type){
+        List<String> result = new ArrayList<String>();
+        for(String beanName :this.beanDefinitionMap.keySet()){
+            if(type.isAssignableFrom(this.getType(beanName))){
+                result.add(beanName);
+            }
+        }
+        return result;
+    }
+
     /**
      * Get instance of bean
      *
@@ -81,8 +103,9 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
     public Object getBean(String beanID) {
         BeanDefinition bd = this.getBeanDefinition(beanID);
 
-        if (bd == null)
-            throw new BeanCreationException("Bean Definition does not exist - ['" + beanID + "']");
+        if (bd == null) {
+            return null;
+        }
 
         // if the bean is singleton
         // use double check lock to create bean
@@ -114,12 +137,14 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
      * @see #instantiateBean(BeanDefinition)
      * @see #populateBean(BeanDefinition, Object)
      */
-    private Object createBean(BeanDefinition bd) {
+    protected Object createBean(BeanDefinition bd) {
         // create instance
         Object bean = instantiateBean(bd);
 
         // set properties for the instance
         populateBean(bd, bean);
+
+        bean = initializeBean(bd, bean);
 
         return bean;
     }
@@ -132,19 +157,19 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
      * @return instance of the bean
      */
     private Object instantiateBean(BeanDefinition bd) {
-        ClassLoader loader = this.getBeanClassLoader();
-        String beanClassName = bd.getBeanClassName();
 
         if (bd.hasConstructorArgumentValues()){
             ConstructorResolver resolver = new ConstructorResolver(this);
             return resolver.autowireConstructor(bd);
-        }
-        
-        try {
-            Class<?> clazz = loader.loadClass(beanClassName);
-            return clazz.newInstance();
-        } catch (Exception e) {
-            throw new BeanCreationException(beanClassName, "create bean with name of " + beanClassName + " failed", e);
+        } else {
+            ClassLoader loader = this.getBeanClassLoader();
+            String beanClassName = bd.getBeanClassName();
+            try {
+                Class<?> clazz = loader.loadClass(beanClassName);
+                return clazz.newInstance();
+            } catch (Exception e) {
+                throw new BeanCreationException(beanClassName, "create bean with name of " + beanClassName + " failed", e);
+            }
         }
     }
 
@@ -228,6 +253,30 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
         } catch (Exception e) {
             throw new BeanCreationException("Populate bean property failed for [" +
                     bd.getBeanClassName() + "]");
+        }
+    }
+
+    protected Object initializeBean(BeanDefinition bd, Object bean) {
+        invokeAwareMethods(bean);
+        // create proxy
+        if (!bd.isSynthetic())
+            return applyBeanPostProcessorAfterInitialization(bean, bd.getID());
+        return bean;
+    }
+
+    public Object applyBeanPostProcessorAfterInitialization(Object existingBean, String beanName) throws BeansException {
+        Object result = existingBean;
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessor()) {
+            result = beanPostProcessor.afterInitialization(result, beanName);
+            if (result == null)
+                return null;
+        }
+        return result;
+    }
+
+    private void invokeAwareMethods(final Object bean) {
+        if (bean instanceof BeanFactoryAware) {
+            ((BeanFactoryAware) bean).setBeanFactory(this);
         }
     }
 

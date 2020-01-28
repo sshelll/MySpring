@@ -74,7 +74,7 @@ public class ReflectiveMethodInvocation implements MethodInvocation {
 
     /**
      * Invoke the join point using reflection.
-     * Subclasses can override this to use cutom invocation.
+     * Subclasses can override this to use custom invocation.
      *
      * @return return value of the join point
      * @throws Throwable when invoking failed

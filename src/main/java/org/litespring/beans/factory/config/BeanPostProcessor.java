@@ -1,5 +1,6 @@
 package org.litespring.beans.factory.config;
 
+import org.litespring.aop.framework.AopConfigException;
 import org.litespring.beans.BeansException;
 
 /**

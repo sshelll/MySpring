@@ -1,5 +1,9 @@
 package org.litespring.beans.factory;
 
+import org.litespring.aop.Advice;
+
+import java.util.List;
+
 /**
  * Description: Container of my Spring
  * Define some behaviors of container.
@@ -20,4 +24,6 @@ public interface BeanFactory {
      * @throws NoSuchBeanDefinitionException when the container dose not contain it
      */
     Class<?> getType(String name) throws NoSuchBeanDefinitionException;
+
+    List<Object> getBeansByType(Class<?> type);
 }

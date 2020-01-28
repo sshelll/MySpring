@@ -1,5 +1,6 @@
 package org.litespring.test.version1;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.litespring.beans.factory.exception.BeanCreationException;
@@ -59,12 +60,8 @@ public class BeanFactoryTest {
     public void testInvalidBean(){
         reader.loadBeanDefinitions("petStore-v1.xml");
 
-        try{
-            factory.getBean("invalidBean");
-        } catch (BeanCreationException e){
-            return;
-        }
-        fail("cannot catch BeanCreationException!");
+        Assert.assertEquals(null, factory.getBean("invalidBean"));
+
     }
 
     @Test
